@@ -1,0 +1,6 @@
+﻿  MyForm.cpp
+  Recursividad.cpp
+  Generando código...
+C:\Users\Diego\source\repos\Lab1_Diego_Morales_1132119\Lab1_Diego_Morales_1132119\Recursividad.cpp(34): warning C4715:  'Recursividad::Binario': no todas las rutas de acceso de control devuelven un valor
+  MyForm.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  Lab1_Diego_Morales_1132119.vcxproj -> C:\Users\Diego\source\repos\Lab1_Diego_Morales_1132119\Debug\Lab1_Diego_Morales_1132119.exe
