@@ -55,3 +55,7 @@ System::String^ Recursividad::Palindromo(System::String^ Palabra) {
 	}
 	return "No es palindromo.";
 }
+
+int Recursividad::Decimal(int num4, int base) {
+
+}

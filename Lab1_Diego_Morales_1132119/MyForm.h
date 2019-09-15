@@ -489,16 +489,24 @@ namespace Lab1DiegoMorales1132119 {
 private: System::Void Fibonacci_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void BtnCalcular1_Click(System::Object^ sender, System::EventArgs^ e) {
+		Stopwatch^ Timer = gcnew Stopwatch();
+		Timer->Start();
 		int num1 = System::Convert::ToInt32(txtNum1->Text);
 		Recursividad^ recursividadObj1 = gcnew Recursividad();
 		resultado->Text = "Resultado: " + System::Convert::ToString(recursividadObj1->Factorial(num1));
+		Timer->Stop();
+		System::Windows::Forms::MessageBox::Show("Tiempo de ejecución: " + System::Convert::ToString(Timer->Elapsed));
 }
 private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void BtnCalcular2_Click(System::Object^ sender, System::EventArgs^ e) {
+		Stopwatch^ Timer = gcnew Stopwatch();
+		Timer->Start();
 		int num2 = System::Convert::ToInt32(txtNum2->Text);
 		Recursividad^ recursividadObj2 = gcnew Recursividad();
 		resultado->Text = "Resultado: " + System::Convert::ToString(recursividadObj2->Binario(num2));
+		Timer->Stop();
+		System::Windows::Forms::MessageBox::Show("Tiempo de ejecución: " + System::Convert::ToString(Timer->Elapsed));
 }
 
 private: System::Void TabPage1_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -506,15 +514,23 @@ private: System::Void TabPage1_Click(System::Object^ sender, System::EventArgs^ 
 private: System::Void Label3_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void BtnCalcular3_Click(System::Object^ sender, System::EventArgs^ e) {
+		Stopwatch^ Timer = gcnew Stopwatch();
+		Timer->Start();
 		int factor1 = System::Convert::ToInt32(txtFactor1->Text);
 		int factor2 = System::Convert::ToInt32(txtFactor2->Text);
 		Recursividad^ recursividadObj3 = gcnew Recursividad();
 		resultado2->Text = "Resultado: " + System::Convert::ToString(recursividadObj3->Multiplicacion(factor1, factor2));
+		Timer->Stop();
+		System::Windows::Forms::MessageBox::Show("Tiempo de ejecución: " + System::Convert::ToString(Timer->Elapsed));
 }
 private: System::Void BtnVerificar_Click(System::Object^ sender, System::EventArgs^ e) {
+		Stopwatch^ Timer = gcnew Stopwatch();
+		Timer->Start();
 		System::String^ palabra = txtPalindromo->Text;
 		Recursividad^ recursividadObj4 = gcnew Recursividad();
 		resultado2->Text = "Resultado: " + System::Convert::ToString(recursividadObj4->Palindromo(palabra->ToUpper()));
+		Timer->Stop();
+		System::Windows::Forms::MessageBox::Show("Tiempo de ejecución: " + System::Convert::ToString(Timer->Elapsed));
 }
 private: System::Void Button1_Click(System::Object^ sender, System::EventArgs^ e) {
 }

@@ -9,7 +9,7 @@ public:
 	System::String^ Binario(int num2);
 	int Multiplicacion(int factor1, int factor2);
 	System::String^ Palindromo(System::String^ Palabra);
-
+	int Decimal(int num4, int base);
 	//System::String^ ObtenerTextoArchivo(System::String^ruta);
 };
 
